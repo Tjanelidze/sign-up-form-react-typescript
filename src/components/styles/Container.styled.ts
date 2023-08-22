@@ -2,7 +2,8 @@ import { styled } from 'styled-components';
 
 export const Container = styled.div`
   max-width: 120rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: red;
   padding: 2rem;
 

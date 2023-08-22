@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const WelcomeSign = styled.div`
+  align-self: center;
+
   h1 {
     color: #fff;
     font-size: 5rem;

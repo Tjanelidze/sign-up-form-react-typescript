@@ -3,6 +3,7 @@ import GlobalStyle from './components/styles/GlobalStyles.styled';
 import { styled } from 'styled-components';
 import WelcomeSignComponent from './components/WelcomeSignComponent';
 import { Container } from './components/styles/Container.styled';
+import FreeTrialBox from './components/FreeTrialBox';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,8 @@ function App() {
         <GlobalStyle />
         <WelcomeSignComponent />
         <div>
+          <FreeTrialBox />
+          <div></div>
           <h1 className="primaryHeading">Hello</h1>
           <p className="description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id vero
