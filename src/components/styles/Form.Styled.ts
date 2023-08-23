@@ -45,6 +45,12 @@ export const FormStyled = styled.div`
     color: #fff;
   }
 
+  form > button:hover {
+    cursor: pointer;
+    background-color: #2da36f;
+    transition: background-color 0.3s ease-out;
+  }
+
   p {
     color: #bab7d4;
     font-size: 1.1rem;
@@ -52,8 +58,9 @@ export const FormStyled = styled.div`
     margin-top: 0.8rem;
   }
 
-  p > span {
+  p > a {
     color: #ff7979;
     font-weight: 700;
+    text-decoration: none;
   }
 `;

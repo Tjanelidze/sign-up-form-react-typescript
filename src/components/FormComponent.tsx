@@ -12,7 +12,7 @@ export default function FormComponent() {
       </form>
       <p>
         By clicking the button, you are agreeing to our
-        <span> Terms and Services </span>
+        <a href="#"> Terms and Services </a>
       </p>
     </FormStyled>
   );
