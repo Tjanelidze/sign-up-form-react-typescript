@@ -6,6 +6,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   color: red;
   padding: 2rem;
+  gap: 4.5rem;
 
   .primaryHeading {
     font-size: 50px;
