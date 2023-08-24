@@ -1,13 +1,26 @@
+import { FieldValues, UseFormRegister } from 'react-hook-form';
 import { FormStyled } from './styles/Form.Styled';
 
-export default function FormComponent() {
+interface Props {
+  register: UseFormRegister<FieldValues>;
+}
+
+export default function FormComponent({ register }: Props) {
   return (
     <FormStyled>
       <form action="">
-        <input type="text" placeholder="FirstName" />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="Email Address" />
-        <input type="password" placeholder="Password" />
+        <input {...register('firstName')} type="text" placeholder="FirstName" />
+        <input {...register('lastName')} type="text" placeholder="Last Name" />
+        <input
+          {...register('email')}
+          type="email"
+          placeholder="Email Address"
+        />
+        <input
+          {...register('password')}
+          type="password"
+          placeholder="Password"
+        />
         <button>Claim Your Free Trial</button>
       </form>
       <p>

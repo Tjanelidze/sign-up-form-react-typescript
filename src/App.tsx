@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 import GlobalStyle from './components/styles/GlobalStyles.styled';
 import WelcomeSignComponent from './components/WelcomeSignComponent';
@@ -7,7 +7,7 @@ import FreeTrialBox from './components/FreeTrialBox';
 import FormComponent from './components/FormComponent';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { register } = useForm();
 
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
         <WelcomeSignComponent />
         <div>
           <FreeTrialBox />
-          <FormComponent />
+          <FormComponent register={register} />
         </div>
       </Container>
     </>
