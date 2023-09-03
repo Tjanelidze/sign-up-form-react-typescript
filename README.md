@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# React Vite TypeScript Sign-Up Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple sign-up form built with React Vite, React Hook Forms, and Styled Components for practice purposes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Collect user information, including first name, last name, email, and password.
+- Form validation and error handling.
+- Styled with Styled Components for a clean and modern look.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to run the project on your local machine.
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/Tjanelidze/sign-up-form-react-typescript
+   cd react-vite-signup-form
+   ```
