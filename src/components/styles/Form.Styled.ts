@@ -14,19 +14,34 @@ export const FormStyled = styled.div`
     gap: 2rem;
   }
 
-  form > input {
+  .inputBox {
+    text-align: right;
+  }
+
+  .inputBox > p {
+    margin-top: 0.6rem;
+    color: #ff7979;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  form input {
+    width: 100%;
     color: #3d3b48;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.25px;
     border-radius: 5px;
-    border: 1px solid #5e54a4;
+    /* border: 1px solid #5e54a4; */
+    outline: 1px solid #dedede;
+    border: none;
     background: #fff;
     padding: 1.5rem 3.2rem;
   }
 
-  form > input:focus {
-    outline-color: #5e54a4;
+  form input:focus {
+    outline: 1px solid #5e54a4;
   }
 
   form > button {
