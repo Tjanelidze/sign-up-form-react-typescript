@@ -7,7 +7,7 @@ import FreeTrialBox from './components/FreeTrialBox';
 import FormComponent from './components/FormComponent';
 
 function App() {
-  const { register } = useForm();
+  const { register,handleSubmit, formState } = useForm();
 
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
         <WelcomeSignComponent />
         <div>
           <FreeTrialBox />
-          <FormComponent register={register} />
+          <FormComponent register={register} handleSubmit={handleSubmit} formState={formState} />
         </div>
       </Container>
     </>

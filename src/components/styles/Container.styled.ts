@@ -15,4 +15,9 @@ export const Container = styled.div`
   .description {
     color: #fff;
   }
+
+
+  @media (max-width: 48em) {
+    grid-template-columns: 1fr;
+  }
 `;
